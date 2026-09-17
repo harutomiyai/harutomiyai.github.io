@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — sleep-sync</title>
+<link rel="stylesheet" href="/style.css">
+<main>
+  <nav><a href="/sleep-sync/">← sleep-sync</a></nav>
+  <h1>プライバシーポリシー</h1>
+  <p class="lede">sleep-sync（以下「本ツール」）における個人データの取り扱いについて。</p>
+
+  <h2>本ツールの性質</h2>
+  <p>
+    本ツールは、作者（GitHub: harutomiyai）が自分自身の記録のために作った個人用のスクリプトです。
+    一般に配布しておらず、作者以外の利用者はいません。サーバーを持たず、
+    作者のパソコン上でのみ動作します。
+  </p>
+
+  <h2>取得する情報</h2>
+  <p>
+    Google アカウントの認可を受けて、Google Health API から
+    作者本人の睡眠データを読み取ります。使用する権限は次のひとつだけです。
+  </p>
+  <ul>
+    <li><code>https://www.googleapis.com/auth/googlehealth.sleep.readonly</code>（読み取り専用）</li>
+  </ul>
+  <p>読み取る内容は次のとおりです。</p>
+  <ul>
+    <li>睡眠セッションの開始時刻と終了時刻</li>
+    <li>睡眠ステージ（浅い・深い・レム・覚醒）の区間</li>
+    <li>短い目覚めの記録</li>
+  </ul>
+  <p>
+    これ以外のデータ（位置情報、連絡先、メール、健康指標その他）は取得しません。
+    Google 上のデータへの書き込みや削除も行いません。
+  </p>
+
+  <h2>情報の保存場所</h2>
+  <p>
+    読み取ったデータは、作者本人のパソコンの中にある個人的なノート（非公開の保管庫）に
+    書き出されます。認証情報（アクセストークンおよびリフレッシュトークン）は、
+    同じパソコンのホームディレクトリ内に、本人のみが読める権限で保存されます。
+  </p>
+
+  <h2>第三者提供</h2>
+  <p>
+    取得したデータを第三者へ提供・販売・共有することはありません。
+    広告、プロファイリング、機械学習モデルの学習には使用しません。
+    データが外部のサーバーへ送信されることはありません。
+  </p>
+
+  <h2>利用目的</h2>
+  <p>
+    作者が自分の生活と体調を記録し、振り返るためだけに使用します。
+    それ以外の目的には使用しません。
+  </p>
+
+  <h2>アクセスの取り消し</h2>
+  <p>
+    Google アカウントの
+    <a href="https://myaccount.google.com/permissions">アカウントにアクセスできるアプリ</a>
+    から、本ツールへの許可をいつでも取り消せます。取り消すと、それ以降データは読み取られません。
+  </p>
+
+  <h2>Google ユーザーデータの取り扱い</h2>
+  <p>
+    本ツールによる Google API から取得した情報の使用および他アプリへの転送は、
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API サービスのユーザーデータに関するポリシー</a>
+    （限定的使用の要件を含む）に準拠します。
+  </p>
+
+  <h2>お問い合わせ</h2>
+  <p><a href="https://github.com/harutomiyai">github.com/harutomiyai</a></p>
+
+  <p class="meta">最終更新: 2026年9月17日</p>
+</main>

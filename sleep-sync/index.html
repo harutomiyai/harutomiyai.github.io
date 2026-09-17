@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sleep-sync</title>
+<link rel="stylesheet" href="/style.css">
+<main>
+  <nav><a href="/">← harutomiyai</a></nav>
+  <h1>sleep-sync</h1>
+  <p class="lede">自分の睡眠記録を、自分のノートに取り込むための個人用ツール。</p>
+
+  <h2>これは何か</h2>
+  <p>
+    作者が自分の生活を記録するために作った、自分専用のスクリプトです。
+    Google Health API から自分の睡眠データを読み取り、手元のパソコンにある
+    個人的なノート（Obsidian）に書き出します。
+  </p>
+  <p>
+    サーバーはありません。配布もしていません。作者以外の利用者はいません。
+  </p>
+
+  <h2>何を読み取るか</h2>
+  <p>
+    Google から読み取るのは睡眠のデータだけです。使っている権限は
+    <code>googlehealth.sleep.readonly</code> ひとつで、読み取り専用です。
+    書き込みや削除はしません。
+  </p>
+  <ul>
+    <li>就寝時刻と起床時刻</li>
+    <li>睡眠ステージ（浅い・深い・レム・覚醒）の時間</li>
+    <li>短い目覚めの回数</li>
+  </ul>
+
+  <h2>どこへ行くか</h2>
+  <p>
+    読み取ったデータは、作者本人のパソコンの中にあるノートに書き込まれます。
+    そこから外へ送られることはありません。第三者への提供、販売、広告利用はしません。
+  </p>
+
+  <h2>もっと詳しく</h2>
+  <ul>
+    <li><a href="/sleep-sync/privacy.html">プライバシーポリシー</a></li>
+    <li><a href="/sleep-sync/terms.html">利用規約</a></li>
+  </ul>
+
+  <p class="meta">
+    作者: <a href="https://github.com/harutomiyai">harutomiyai</a>
+  </p>
+</main>
